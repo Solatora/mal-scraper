@@ -1,0 +1,34 @@
+{
+    "title": "CheerioCrawler Template",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "mode": {
+            "title": "Scraping mode",
+            "type": "string",
+            "description": "Which mode of scraping to use",
+            "enum": ["list", "search"],
+            "editor": "select"
+        },
+        "searchTitles": {
+            "title": "Anime titles",
+            "type": "array",
+            "description": "Anime to scrape.",
+            "editor": "stringList"
+        },
+        "maxResults": {
+            "title": "Maximum results",
+            "type": "integer",
+            "description": "Maximum amount of results made in list mode",
+            "editor": "number",
+            "default": 50
+        },
+        "detailedList": {
+            "title": "Detailed list",
+            "type": "boolean",
+            "description": "Should list include extra details",
+            "editor": "checkbox",
+            "default": false
+        }
+    }
+}
